@@ -1,0 +1,90 @@
+# =====================================================================
+#  Weekly Compliance & Violation Report - settings
+# ---------------------------------------------------------------------
+#  This file is meant to be edited by plant / MIS staff, no coding needed.
+#  - Change a number, save the file, and re-run the report.
+#  - Lines starting with "#" are notes and are ignored.
+#  - Status colour for each section is decided by the violation COUNT:
+#        count <= green_max            -> GREEN
+#        count <= amber_max            -> AMBER
+#        count >  amber_max            -> RED
+# =====================================================================
+
+report:
+  plant_name: "Plant A"
+  week_ending: "2026-11-08"        # last day (Sunday) of the week to report
+  prepared_by: "MIS Desk"
+  top_rows_per_table: 5            # how many rows to show in each section table
+
+# 1. System discipline - monitoring devices that went offline
+devices_offline:
+  title: "System discipline - devices offline"
+  max_offline_hours_per_day: 2     # a device offline longer than this in a day = 1 violation
+  green_max: 5
+  amber_max: 15
+  owner: "Maintenance - Electrical"
+  action: "Restore connectivity for {item} and check its power / network point"
+
+# 2. Temperature out of range (hourly readings)
+temperature:
+  title: "Temperature out of range"
+  ranges_c:                        # allowed min / max temperature per equipment
+    "Furnace F1":         {min: 1480, max: 1560}
+    "Furnace F2":         {min: 1480, max: 1560}
+    "Furnace F3":         {min: 1480, max: 1560}
+    "Holding Furnace H1": {min: 1420, max: 1500}
+  green_max: 6
+  amber_max: 15
+  owner: "Melt Shop Supervisor"
+  action: "Review burner / power settings on {item}; recalibrate thermocouple"
+
+# 3. Work-in-progress ageing
+wip_ageing:
+  title: "Work-in-progress ageing"
+  max_age_days: 7                  # a job still open after this many days = 1 violation
+  green_max: 3
+  amber_max: 8
+  owner: "Production Planning"
+  action: "Expedite ageing job {item} - agree a clear date with the stage owner"
+
+# 4. Safety violations (camera / PPE events)
+safety:
+  title: "Safety violations"
+  event_types_counted:             # remove a line here to stop counting that event type
+    - "No helmet"
+    - "No safety shoes"
+    - "Restricted zone entry"
+  green_max: 10
+  amber_max: 25
+  owner: "Safety Officer"
+  action: "Run a toolbox talk and PPE audit in {item}"
+
+# 5. Inward material rejections
+inward_rejection:
+  title: "Inward material rejections"
+  max_rejection_pct: 3.0           # a lot with more than this % rejected = 1 violation
+  green_max: 3
+  amber_max: 8
+  owner: "Stores & Quality Control"
+  action: "Raise a quality complaint with {item} and tighten inspection"
+
+# 6. Yield below target
+yield:
+  title: "Yield below target"
+  target_yield_pct:                # minimum good-casting yield per heat
+    "Furnace F1": 62.0
+    "Furnace F2": 62.0
+    "Furnace F3": 60.0
+  green_max: 20
+  amber_max: 40
+  owner: "Process Engineer"
+  action: "Review gating / returns on {item} heats below target yield"
+
+# 7. Late report submissions
+late_reports:
+  title: "Late report submissions"
+  grace_minutes: 30                # submitted after due time + grace = late; not submitted = late
+  green_max: 6
+  amber_max: 12
+  owner: "MIS Desk"
+  action: "Follow up with owner of '{item}' and set a daily reminder"

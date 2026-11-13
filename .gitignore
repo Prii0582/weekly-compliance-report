@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.ipynb_checkpoints/
+.DS_Store
+Thumbs.db
+~$*.xlsx
+# intermediate render; the PDF and Excel outputs are committed as samples
+output/*.html

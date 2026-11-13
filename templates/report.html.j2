@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Weekly Compliance Report - {{ plant }} - week ending {{ this.end.strftime('%d %b %Y') }}</title>
+<style>{{ css | safe }}</style>
+</head>
+<body>
+{% set total_pages = 1 + pages|length %}
+{% macro arrow(s) -%}
+  {%- if s.arrow == 'up' -%}<span class="chg bad">&#9650; {{ s.change }}</span>
+  {%- elif s.arrow == 'down' -%}<span class="chg good">&#9660; {{ -s.change }}</span>
+  {%- else -%}<span class="chg flat">&#9644; 0</span>{%- endif -%}
+{%- endmacro %}
+{% macro pct(s) -%}
+  {%- if s.change_pct is none -%}new{%- elif s.change == 0 -%}no change{%- else -%}{{ '%+.0f' % s.change_pct }}%{%- endif -%}
+{%- endmacro %}
+{% macro footer(n) -%}
+<footer>
+  <span>{{ plant }} &middot; Weekly Compliance &amp; Violation Report &middot; week ending {{ this.end.strftime('%d %b %Y') }}</span>
+  <span>Synthetic demo data &middot; Page {{ n }} of {{ total_pages }}</span>
+</footer>
+{%- endmacro %}
+
+<!-- ============================== PAGE 1: EXECUTIVE SUMMARY ============================== -->
+<section class="page cover">
+  <header class="band">
+    <div>
+      <div class="eyebrow">{{ plant }} &middot; Management review</div>
+      <h1>Weekly Compliance &amp; Violation Report</h1>
+      <div class="sub">Week {{ this.start.strftime('%d %b') }} &ndash; {{ this.end.strftime('%d %b %Y') }}
+        &nbsp;&middot;&nbsp; compared with {{ prev.start.strftime('%d %b') }} &ndash; {{ prev.end.strftime('%d %b') }}</div>
+    </div>
+    <div class="band-right">
+      <div class="tally">
+        <span class="dot red"></span>{{ counts.red }} red
+        <span class="dot amber"></span>{{ counts.amber }} amber
+        <span class="dot green"></span>{{ counts.green }} green
+      </div>
+      <div class="issued">Issued {{ run_date.strftime('%a %d %b %Y') }} &middot; {{ cfg.report.prepared_by }}</div>
+    </div>
+  </header>
+
+  <div class="summary-line">
+    <strong>Executive summary.</strong>
+    {{ counts.red }} of 7 areas are <b class="t-red">red</b> and {{ counts.amber }} are <b class="t-amber">amber</b> this week.
+    {%- set worse = sections | selectattr('arrow', 'equalto', 'up') | list %}
+    {%- set better = sections | selectattr('arrow', 'equalto', 'down') | list %}
+    {{ worse|length }} got worse and {{ better|length }} improved versus last week.
+    The violation log holds <b>{{ open_items }}</b> open items, of which <b>{{ overdue }}</b> are past their {{ close_days }}-day closure target.
+  </div>
+
+  <div class="kpis">
+    {% for s in sections %}
+    <div class="kpi s-{{ s.status }}">
+      <div class="kpi-head"><span class="num">{{ s.number }}</span><span class="pill {{ s.status }}">{{ s.status|upper }}</span></div>
+      <div class="kpi-title">{{ s.title }}</div>
+      <div class="kpi-value">{{ s.count }}</div>
+      <div class="kpi-unit">{{ s.unit }}</div>
+      <div class="kpi-foot">{{ arrow(s) }} <span class="muted">vs {{ s.prev_count }} last week ({{ pct(s) }})</span></div>
+    </div>
+    {% endfor %}
+    <div class="kpi kpi-log">
+      <div class="kpi-head"><span class="num">&#10003;</span><span class="pill navy">LOG</span></div>
+      <div class="kpi-title">Violation log &ndash; closure</div>
+      <div class="kpi-value">{{ open_items }}</div>
+      <div class="kpi-unit">open of {{ log_total }} logged (2 weeks)</div>
+      <div class="kpi-foot"><span class="chg bad">{{ overdue }} overdue</span> <span class="muted">target {{ close_days }} days</span></div>
+    </div>
+  </div>
+
+  <h2 class="block-title">Top 3 actions for this week</h2>
+  <ol class="actions">
+    {% for s in actions %}
+    <li>
+      <span class="a-num s-{{ s.status }}">{{ loop.index }}</span>
+      <div class="a-body">
+        <div class="a-text">{{ s.action }}</div>
+        <div class="a-meta"><span class="pill {{ s.status }}">{{ s.status|upper }}</span>
+          {{ s.title }} &middot; {{ s.count }} {{ s.unit }} ({{ arrow(s) }} vs last week) &middot; Owner: <b>{{ cfg[s.key].owner }}</b></div>
+      </div>
+    </li>
+    {% endfor %}
+  </ol>
+
+  <h2 class="block-title">At a glance</h2>
+  <table class="glance">
+    <thead><tr><th>#</th><th>Check</th><th>Rule applied</th><th class="r">Last week</th><th class="r">This week</th><th class="c">Change</th><th class="c">Status</th></tr></thead>
+    <tbody>
+    {% for s in sections %}
+      <tr><td>{{ s.number }}</td><td><b>{{ s.title }}</b></td><td class="muted">{{ s.rule_short }}</td>
+        <td class="r">{{ s.prev_count }}</td><td class="r"><b>{{ s.count }}</b></td><td class="c">{{ arrow(s) }}</td>
+        <td class="c"><span class="pill {{ s.status }}">{{ s.status|upper }}</span></td></tr>
+    {% endfor %}
+    </tbody>
+  </table>
+  {{ footer(1) }}
+</section>
+
+<!-- ============================== DETAIL PAGES ============================== -->
+{% for group in pages %}
+<section class="page detail">
+  <header class="mini-band">
+    <span>Weekly Compliance &amp; Violation Report &middot; {{ plant }}</span>
+    <span>{{ this.start.strftime('%d %b') }} &ndash; {{ this.end.strftime('%d %b %Y') }}</span>
+  </header>
+
+  {% for s in group %}
+  <article class="sec s-{{ s.status }}">
+    <div class="sec-head">
+      <h2><span class="sec-num">{{ s.number }}</span>{{ s.title }}</h2>
+      <span class="pill {{ s.status }}">{{ s.status|upper }}</span>
+    </div>
+    <div class="sec-body">
+      <div class="sec-left">
+        <div class="big">{{ s.count }}</div>
+        <div class="kpi-unit">{{ s.unit }}</div>
+        <div class="kpi-foot">{{ arrow(s) }} <span class="muted">vs {{ s.prev_count }} last week ({{ pct(s) }})</span></div>
+        <div class="chart-label">Daily this week</div>
+        {{ s.chart | safe }}
+      </div>
+      <div class="sec-right">
+        <div class="rule"><b>Rule:</b> {{ s.rule }}. Green &le; {{ cfg[s.key].green_max }}, amber &le; {{ cfg[s.key].amber_max }}, red above.</div>
+        {% if s.rows %}
+        <table class="top">
+          {%- set numeric = [] %}{% for v in s.rows[0] %}{% do numeric.append((v|string)[:1] in '0123456789') %}{% endfor %}
+          <thead><tr>{% for c in s.columns %}<th{% if numeric[loop.index0] %} class="r"{% endif %}>{{ c }}</th>{% endfor %}</tr></thead>
+          <tbody>
+            {% for r in s.rows %}<tr>{% for v in r %}<td{% if numeric[loop.index0] %} class="r"{% endif %}>{{ v }}</td>{% endfor %}</tr>{% endfor %}
+          </tbody>
+        </table>
+        {% else %}
+        <div class="none">No violations this week.</div>
+        {% endif %}
+        <div class="next"><b>Next step:</b> {{ s.action }} &middot; <span class="muted">Owner: {{ cfg[s.key].owner }}</span></div>
+      </div>
+    </div>
+  </article>
+  {% endfor %}
+
+  {% if loop.last %}
+  <article class="sec appendix">
+    <div class="sec-head"><h2><span class="sec-num navy">&#10003;</span>Violation log &ndash; resolution status</h2>
+      <span class="muted small">Full detail in output/violation_log.xlsx</span></div>
+    <p class="rule">Every violation from the last two weeks is logged with an ID, owner and closure date.
+      Target: close within {{ close_days }} days. <b>{{ open_items }}</b> open &middot; <b>{{ overdue }}</b> overdue &middot; {{ log_total }} logged.</p>
+    <table class="top">
+      <thead><tr><th>Category</th><th class="r">Logged</th><th class="r">Closed</th><th class="r">Open</th><th class="r">Overdue</th><th class="r">On-time closure</th></tr></thead>
+      <tbody>
+      {% for r in log_summary %}
+        <tr><td>{{ r.category }}</td><td class="r">{{ r.logged }}</td><td class="r">{{ r.closed }}</td>
+          <td class="r">{{ r.open }}</td><td class="r{% if r.overdue %} t-red{% endif %}"><b>{{ r.overdue }}</b></td><td class="r">{{ r.on_time_pct }}</td></tr>
+      {% endfor %}
+      </tbody>
+    </table>
+  </article>
+  <div class="howto">
+    <b>How to read this report.</b> Each check compares this week's count with last week's.
+    &#9650; means more violations (worse), &#9660; means fewer (better). Status colours and limits come from
+    <code>config/thresholds.yaml</code>, which can be edited without touching the code.
+    Generated {{ generated }} from synthetic sample data.
+  </div>
+  {% endif %}
+  {{ footer(loop.index + 1) }}
+</section>
+{% endfor %}
+</body>
+</html>

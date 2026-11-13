@@ -1,0 +1,85 @@
+date,report_name,owner,due_at,submitted_at
+2026-10-26,Daily Production Report,Production Planning,2026-10-26 10:00:00,2026-10-26 09:06:00
+2026-10-26,Melting Log,Melt Shop Supervisor,2026-10-26 09:00:00,2026-10-26 09:01:00
+2026-10-26,Shift Handover Note,Shift In-charge,2026-10-26 08:30:00,2026-10-26 08:45:00
+2026-10-26,Quality Inspection Summary,Stores & Quality Control,2026-10-26 11:00:00,2026-10-26 09:50:00
+2026-10-26,Energy Consumption Log,Maintenance - Electrical,2026-10-26 12:00:00,2026-10-26 12:07:00
+2026-10-26,Dispatch Summary,Dispatch Desk,2026-10-26 18:00:00,2026-10-26 18:13:00
+2026-10-27,Daily Production Report,Production Planning,2026-10-27 10:00:00,2026-10-27 10:47:00
+2026-10-27,Melting Log,Melt Shop Supervisor,2026-10-27 09:00:00,2026-10-27 08:41:00
+2026-10-27,Shift Handover Note,Shift In-charge,2026-10-27 08:30:00,2026-10-27 07:29:00
+2026-10-27,Quality Inspection Summary,Stores & Quality Control,2026-10-27 11:00:00,2026-10-27 09:55:00
+2026-10-27,Energy Consumption Log,Maintenance - Electrical,2026-10-27 12:00:00,2026-10-27 10:52:00
+2026-10-27,Dispatch Summary,Dispatch Desk,2026-10-27 18:00:00,2026-10-27 17:03:00
+2026-10-28,Daily Production Report,Production Planning,2026-10-28 10:00:00,2026-10-28 09:43:00
+2026-10-28,Melting Log,Melt Shop Supervisor,2026-10-28 09:00:00,2026-10-28 08:51:00
+2026-10-28,Shift Handover Note,Shift In-charge,2026-10-28 08:30:00,2026-10-28 08:14:00
+2026-10-28,Quality Inspection Summary,Stores & Quality Control,2026-10-28 11:00:00,2026-10-28 10:02:00
+2026-10-28,Energy Consumption Log,Maintenance - Electrical,2026-10-28 12:00:00,2026-10-28 11:04:00
+2026-10-28,Dispatch Summary,Dispatch Desk,2026-10-28 18:00:00,2026-10-28 17:38:00
+2026-10-29,Daily Production Report,Production Planning,2026-10-29 10:00:00,2026-10-29 09:45:00
+2026-10-29,Melting Log,Melt Shop Supervisor,2026-10-29 09:00:00,2026-10-29 07:47:00
+2026-10-29,Shift Handover Note,Shift In-charge,2026-10-29 08:30:00,2026-10-29 07:18:00
+2026-10-29,Quality Inspection Summary,Stores & Quality Control,2026-10-29 11:00:00,2026-10-29 11:24:00
+2026-10-29,Energy Consumption Log,Maintenance - Electrical,2026-10-29 12:00:00,2026-10-29 13:47:00
+2026-10-29,Dispatch Summary,Dispatch Desk,2026-10-29 18:00:00,2026-10-29 18:02:00
+2026-10-30,Daily Production Report,Production Planning,2026-10-30 10:00:00,2026-10-30 09:08:00
+2026-10-30,Melting Log,Melt Shop Supervisor,2026-10-30 09:00:00,2026-10-30 12:36:00
+2026-10-30,Shift Handover Note,Shift In-charge,2026-10-30 08:30:00,2026-10-30 07:22:00
+2026-10-30,Quality Inspection Summary,Stores & Quality Control,2026-10-30 11:00:00,2026-10-30 10:41:00
+2026-10-30,Energy Consumption Log,Maintenance - Electrical,2026-10-30 12:00:00,2026-10-30 11:49:00
+2026-10-30,Dispatch Summary,Dispatch Desk,2026-10-30 18:00:00,2026-10-30 16:56:00
+2026-10-31,Daily Production Report,Production Planning,2026-10-31 10:00:00,2026-10-31 14:33:00
+2026-10-31,Melting Log,Melt Shop Supervisor,2026-10-31 09:00:00,
+2026-10-31,Shift Handover Note,Shift In-charge,2026-10-31 08:30:00,2026-10-31 07:58:00
+2026-10-31,Quality Inspection Summary,Stores & Quality Control,2026-10-31 11:00:00,2026-10-31 10:57:00
+2026-10-31,Energy Consumption Log,Maintenance - Electrical,2026-10-31 12:00:00,2026-10-31 12:53:00
+2026-10-31,Dispatch Summary,Dispatch Desk,2026-10-31 18:00:00,2026-10-31 17:59:00
+2026-11-01,Daily Production Report,Production Planning,2026-11-01 10:00:00,2026-11-01 09:38:00
+2026-11-01,Melting Log,Melt Shop Supervisor,2026-11-01 09:00:00,2026-11-01 07:49:00
+2026-11-01,Shift Handover Note,Shift In-charge,2026-11-01 08:30:00,2026-11-01 10:16:00
+2026-11-01,Quality Inspection Summary,Stores & Quality Control,2026-11-01 11:00:00,2026-11-01 11:05:00
+2026-11-01,Energy Consumption Log,Maintenance - Electrical,2026-11-01 12:00:00,2026-11-01 10:37:00
+2026-11-01,Dispatch Summary,Dispatch Desk,2026-11-01 18:00:00,2026-11-01 17:51:00
+2026-11-02,Daily Production Report,Production Planning,2026-11-02 10:00:00,2026-11-02 09:08:00
+2026-11-02,Melting Log,Melt Shop Supervisor,2026-11-02 09:00:00,2026-11-02 07:30:00
+2026-11-02,Shift Handover Note,Shift In-charge,2026-11-02 08:30:00,2026-11-02 08:32:00
+2026-11-02,Quality Inspection Summary,Stores & Quality Control,2026-11-02 11:00:00,2026-11-02 09:44:00
+2026-11-02,Energy Consumption Log,Maintenance - Electrical,2026-11-02 12:00:00,2026-11-02 10:35:00
+2026-11-02,Dispatch Summary,Dispatch Desk,2026-11-02 18:00:00,2026-11-02 16:38:00
+2026-11-03,Daily Production Report,Production Planning,2026-11-03 10:00:00,2026-11-03 09:23:00
+2026-11-03,Melting Log,Melt Shop Supervisor,2026-11-03 09:00:00,2026-11-03 08:05:00
+2026-11-03,Shift Handover Note,Shift In-charge,2026-11-03 08:30:00,2026-11-03 08:48:00
+2026-11-03,Quality Inspection Summary,Stores & Quality Control,2026-11-03 11:00:00,2026-11-03 09:46:00
+2026-11-03,Energy Consumption Log,Maintenance - Electrical,2026-11-03 12:00:00,2026-11-03 10:37:00
+2026-11-03,Dispatch Summary,Dispatch Desk,2026-11-03 18:00:00,2026-11-03 17:49:00
+2026-11-04,Daily Production Report,Production Planning,2026-11-04 10:00:00,2026-11-04 09:32:00
+2026-11-04,Melting Log,Melt Shop Supervisor,2026-11-04 09:00:00,2026-11-04 07:38:00
+2026-11-04,Shift Handover Note,Shift In-charge,2026-11-04 08:30:00,2026-11-04 08:15:00
+2026-11-04,Quality Inspection Summary,Stores & Quality Control,2026-11-04 11:00:00,2026-11-04 10:47:00
+2026-11-04,Energy Consumption Log,Maintenance - Electrical,2026-11-04 12:00:00,2026-11-04 11:24:00
+2026-11-04,Dispatch Summary,Dispatch Desk,2026-11-04 18:00:00,2026-11-04 21:34:00
+2026-11-05,Daily Production Report,Production Planning,2026-11-05 10:00:00,2026-11-05 09:54:00
+2026-11-05,Melting Log,Melt Shop Supervisor,2026-11-05 09:00:00,
+2026-11-05,Shift Handover Note,Shift In-charge,2026-11-05 08:30:00,2026-11-05 07:41:00
+2026-11-05,Quality Inspection Summary,Stores & Quality Control,2026-11-05 11:00:00,2026-11-05 10:57:00
+2026-11-05,Energy Consumption Log,Maintenance - Electrical,2026-11-05 12:00:00,2026-11-05 10:59:00
+2026-11-05,Dispatch Summary,Dispatch Desk,2026-11-05 18:00:00,2026-11-05 16:33:00
+2026-11-06,Daily Production Report,Production Planning,2026-11-06 10:00:00,2026-11-06 10:50:00
+2026-11-06,Melting Log,Melt Shop Supervisor,2026-11-06 09:00:00,2026-11-06 07:46:00
+2026-11-06,Shift Handover Note,Shift In-charge,2026-11-06 08:30:00,2026-11-06 08:39:00
+2026-11-06,Quality Inspection Summary,Stores & Quality Control,2026-11-06 11:00:00,2026-11-06 10:03:00
+2026-11-06,Energy Consumption Log,Maintenance - Electrical,2026-11-06 12:00:00,
+2026-11-06,Dispatch Summary,Dispatch Desk,2026-11-06 18:00:00,2026-11-06 16:52:00
+2026-11-07,Daily Production Report,Production Planning,2026-11-07 10:00:00,2026-11-07 08:54:00
+2026-11-07,Melting Log,Melt Shop Supervisor,2026-11-07 09:00:00,2026-11-07 08:44:00
+2026-11-07,Shift Handover Note,Shift In-charge,2026-11-07 08:30:00,2026-11-07 08:06:00
+2026-11-07,Quality Inspection Summary,Stores & Quality Control,2026-11-07 11:00:00,2026-11-07 09:40:00
+2026-11-07,Energy Consumption Log,Maintenance - Electrical,2026-11-07 12:00:00,2026-11-07 11:31:00
+2026-11-07,Dispatch Summary,Dispatch Desk,2026-11-07 18:00:00,2026-11-07 17:57:00
+2026-11-08,Daily Production Report,Production Planning,2026-11-08 10:00:00,2026-11-08 09:55:00
+2026-11-08,Melting Log,Melt Shop Supervisor,2026-11-08 09:00:00,2026-11-08 08:44:00
+2026-11-08,Shift Handover Note,Shift In-charge,2026-11-08 08:30:00,2026-11-08 07:09:00
+2026-11-08,Quality Inspection Summary,Stores & Quality Control,2026-11-08 11:00:00,2026-11-08 11:35:00
+2026-11-08,Energy Consumption Log,Maintenance - Electrical,2026-11-08 12:00:00,2026-11-08 16:54:00
+2026-11-08,Dispatch Summary,Dispatch Desk,2026-11-08 18:00:00,2026-11-08 16:40:00

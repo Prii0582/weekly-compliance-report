@@ -1,0 +1,58 @@
+timestamp,area,camera,event_type
+2026-10-26 06:20:00,Pouring Bay,CAM-11,No helmet
+2026-10-26 10:11:00,Pouring Bay,CAM-13,No helmet
+2026-10-26 12:20:00,Pouring Bay,CAM-11,No helmet
+2026-10-26 16:15:00,Stores,CAM-51,No helmet
+2026-10-27 16:59:00,Moulding,CAM-32,No safety shoes
+2026-10-28 06:05:00,Moulding,CAM-31,No helmet
+2026-10-28 06:25:00,Melting,CAM-22,No safety shoes
+2026-10-28 10:39:00,Pouring Bay,CAM-12,No helmet
+2026-10-28 10:46:00,Pouring Bay,CAM-12,No safety shoes
+2026-10-28 11:05:00,Fettling,CAM-43,No helmet
+2026-10-28 17:44:00,Moulding,CAM-33,No safety shoes
+2026-10-28 20:25:00,Melting,CAM-21,No helmet
+2026-10-28 20:55:00,Fettling,CAM-42,No helmet
+2026-10-28 21:29:00,Stores,CAM-51,No gloves
+2026-10-29 07:00:00,Fettling,CAM-41,No safety shoes
+2026-10-29 07:39:00,Pouring Bay,CAM-12,No gloves
+2026-10-29 08:15:00,Fettling,CAM-41,No helmet
+2026-10-29 11:43:00,Melting,CAM-22,No helmet
+2026-10-29 12:43:00,Melting,CAM-21,No safety shoes
+2026-10-29 15:10:00,Melting,CAM-21,No safety shoes
+2026-10-29 19:09:00,Pouring Bay,CAM-13,No helmet
+2026-10-30 06:35:00,Pouring Bay,CAM-12,No helmet
+2026-10-30 11:21:00,Pouring Bay,CAM-13,No helmet
+2026-10-30 13:33:00,Pouring Bay,CAM-13,No helmet
+2026-10-30 13:35:00,Pouring Bay,CAM-13,No gloves
+2026-10-30 16:04:00,Moulding,CAM-32,Restricted zone entry
+2026-10-30 21:44:00,Stores,CAM-52,No helmet
+2026-10-31 10:35:00,Melting,CAM-21,No safety shoes
+2026-10-31 16:41:00,Melting,CAM-22,Restricted zone entry
+2026-10-31 17:15:00,Pouring Bay,CAM-11,No helmet
+2026-10-31 20:32:00,Melting,CAM-21,No helmet
+2026-11-01 06:09:00,Pouring Bay,CAM-13,No safety shoes
+2026-11-01 06:11:00,Melting,CAM-23,Restricted zone entry
+2026-11-01 06:30:00,Moulding,CAM-31,No gloves
+2026-11-01 14:52:00,Fettling,CAM-41,No safety shoes
+2026-11-01 18:55:00,Moulding,CAM-32,Restricted zone entry
+2026-11-01 22:26:00,Pouring Bay,CAM-12,No helmet
+2026-11-02 11:42:00,Fettling,CAM-43,No helmet
+2026-11-03 09:28:00,Moulding,CAM-31,No helmet
+2026-11-03 14:47:00,Pouring Bay,CAM-12,No helmet
+2026-11-03 17:02:00,Pouring Bay,CAM-11,No helmet
+2026-11-03 18:57:00,Pouring Bay,CAM-13,No gloves
+2026-11-04 10:49:00,Moulding,CAM-32,No gloves
+2026-11-04 12:23:00,Pouring Bay,CAM-13,No helmet
+2026-11-04 18:21:00,Pouring Bay,CAM-11,No helmet
+2026-11-04 22:04:00,Pouring Bay,CAM-11,No helmet
+2026-11-05 08:12:00,Moulding,CAM-33,No helmet
+2026-11-05 11:49:00,Melting,CAM-21,No helmet
+2026-11-05 17:04:00,Melting,CAM-21,No helmet
+2026-11-06 08:42:00,Fettling,CAM-43,No helmet
+2026-11-06 20:46:00,Melting,CAM-22,Restricted zone entry
+2026-11-06 21:03:00,Pouring Bay,CAM-12,No helmet
+2026-11-07 07:21:00,Melting,CAM-22,No safety shoes
+2026-11-07 14:55:00,Moulding,CAM-33,No helmet
+2026-11-07 22:03:00,Fettling,CAM-41,No gloves
+2026-11-08 14:02:00,Melting,CAM-21,No gloves
+2026-11-08 15:08:00,Moulding,CAM-32,No gloves

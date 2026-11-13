@@ -1,0 +1,72 @@
+date,lot_no,supplier,material,qty_received_kg,qty_rejected_kg,reason
+2026-10-26,LOT-5001,Supplier A,Ferro Silicon,6500,90,Size out of spec
+2026-10-26,LOT-5002,Supplier A,Pig Iron,3000,30,Short supply
+2026-10-26,LOT-5003,Supplier B,Pig Iron,3000,80,Size out of spec
+2026-10-26,LOT-5004,Supplier E,Ferro Manganese,12500,220,Moisture
+2026-10-26,LOT-5005,Supplier C,Pig Iron,2500,110,Short supply
+2026-10-27,LOT-5006,Supplier B,Pig Iron,9000,300,Moisture
+2026-10-27,LOT-5007,Supplier C,Ferro Silicon,13000,550,Chemistry out of spec
+2026-10-27,LOT-5008,Supplier D,Ferro Manganese,10500,0,
+2026-10-27,LOT-5009,Supplier B,Resin Sand,6500,110,Moisture
+2026-10-27,LOT-5010,Supplier E,Ferro Silicon,8000,310,Chemistry out of spec
+2026-10-27,LOT-5011,Supplier E,Pig Iron,19500,310,Contamination
+2026-10-28,LOT-5012,Supplier C,Pig Iron,8500,410,Short supply
+2026-10-28,LOT-5013,Supplier C,Pig Iron,4500,200,Chemistry out of spec
+2026-10-28,LOT-5014,Supplier A,Pig Iron,4000,30,Short supply
+2026-10-28,LOT-5015,Supplier A,Ferro Manganese,5000,0,
+2026-10-28,LOT-5016,Supplier A,Ferro Manganese,3500,10,Chemistry out of spec
+2026-10-28,LOT-5017,Supplier B,Ferro Manganese,15500,180,Chemistry out of spec
+2026-10-29,LOT-5018,Supplier C,Steel Scrap,10500,450,Size out of spec
+2026-10-29,LOT-5019,Supplier E,Ferro Silicon,3500,100,Contamination
+2026-10-29,LOT-5020,Supplier C,Resin Sand,14000,160,Contamination
+2026-10-29,LOT-5021,Supplier A,Steel Scrap,2500,30,Moisture
+2026-10-29,LOT-5022,Supplier C,Ferro Silicon,17000,500,Contamination
+2026-10-29,LOT-5023,Supplier C,Ferro Silicon,17000,720,Moisture
+2026-10-30,LOT-5024,Supplier D,Steel Scrap,15000,230,Chemistry out of spec
+2026-10-30,LOT-5025,Supplier D,Pig Iron,13000,250,Chemistry out of spec
+2026-10-30,LOT-5026,Supplier D,Ferro Manganese,4000,60,Contamination
+2026-10-30,LOT-5027,Supplier E,Steel Scrap,17500,240,Size out of spec
+2026-10-30,LOT-5028,Supplier B,Pig Iron,12500,0,
+2026-10-31,LOT-5029,Supplier E,Ferro Manganese,16500,600,Contamination
+2026-10-31,LOT-5030,Supplier B,Ferro Manganese,8000,180,Short supply
+2026-10-31,LOT-5031,Supplier A,Steel Scrap,15000,100,Moisture
+2026-10-31,LOT-5032,Supplier B,Steel Scrap,3000,50,Size out of spec
+2026-10-31,LOT-5033,Supplier A,Steel Scrap,9000,30,Contamination
+2026-11-01,LOT-5034,Supplier B,Pig Iron,19000,520,Size out of spec
+2026-11-01,LOT-5035,Supplier E,Steel Scrap,17000,290,Short supply
+2026-11-01,LOT-5036,Supplier E,Pig Iron,12500,0,
+2026-11-01,LOT-5037,Supplier E,Pig Iron,19000,440,Size out of spec
+2026-11-01,LOT-5038,Supplier E,Resin Sand,18500,390,Contamination
+2026-11-01,LOT-5039,Supplier E,Resin Sand,12000,350,Short supply
+2026-11-02,LOT-5040,Supplier C,Pig Iron,5500,220,Chemistry out of spec
+2026-11-02,LOT-5041,Supplier E,Ferro Manganese,11000,150,Short supply
+2026-11-02,LOT-5042,Supplier A,Ferro Manganese,12500,0,
+2026-11-02,LOT-5043,Supplier A,Ferro Manganese,11500,130,Contamination
+2026-11-02,LOT-5044,Supplier D,Steel Scrap,9500,0,
+2026-11-03,LOT-5045,Supplier D,Steel Scrap,6500,0,
+2026-11-03,LOT-5046,Supplier A,Steel Scrap,2500,0,
+2026-11-03,LOT-5047,Supplier E,Steel Scrap,6000,90,Contamination
+2026-11-04,LOT-5048,Supplier B,Resin Sand,16000,150,Contamination
+2026-11-04,LOT-5049,Supplier A,Ferro Manganese,19000,320,Short supply
+2026-11-04,LOT-5050,Supplier E,Resin Sand,6500,0,
+2026-11-04,LOT-5051,Supplier D,Ferro Silicon,13500,290,Size out of spec
+2026-11-04,LOT-5052,Supplier A,Pig Iron,19000,0,
+2026-11-04,LOT-5053,Supplier D,Steel Scrap,5000,50,Short supply
+2026-11-05,LOT-5054,Supplier B,Ferro Silicon,11000,280,Moisture
+2026-11-05,LOT-5055,Supplier E,Ferro Manganese,6500,150,Moisture
+2026-11-05,LOT-5056,Supplier A,Resin Sand,19000,30,Moisture
+2026-11-05,LOT-5057,Supplier E,Steel Scrap,7500,250,Contamination
+2026-11-05,LOT-5058,Supplier A,Steel Scrap,13500,0,
+2026-11-06,LOT-5059,Supplier C,Steel Scrap,14500,760,Moisture
+2026-11-06,LOT-5060,Supplier B,Ferro Manganese,10500,220,Chemistry out of spec
+2026-11-06,LOT-5061,Supplier D,Steel Scrap,14000,420,Contamination
+2026-11-06,LOT-5062,Supplier D,Ferro Silicon,13000,110,Size out of spec
+2026-11-07,LOT-5063,Supplier A,Resin Sand,10500,210,Moisture
+2026-11-07,LOT-5064,Supplier A,Ferro Silicon,14000,140,Contamination
+2026-11-07,LOT-5065,Supplier E,Ferro Silicon,8500,0,
+2026-11-07,LOT-5066,Supplier B,Ferro Manganese,14500,530,Size out of spec
+2026-11-07,LOT-5067,Supplier A,Steel Scrap,18500,140,Short supply
+2026-11-08,LOT-5068,Supplier A,Pig Iron,15000,140,Chemistry out of spec
+2026-11-08,LOT-5069,Supplier C,Steel Scrap,17500,680,Moisture
+2026-11-08,LOT-5070,Supplier C,Ferro Silicon,4000,190,Chemistry out of spec
+2026-11-08,LOT-5071,Supplier E,Resin Sand,16000,520,Chemistry out of spec
